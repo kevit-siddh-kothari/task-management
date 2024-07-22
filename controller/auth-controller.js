@@ -1,25 +1,29 @@
-const {Auth} = require('../models/auth')
-const bcrypt = require('bcrypt')
+const {Auth} = require('../models/auth');
+const bcrypt = require('bcryptjs');
 
-const SignIn = async(req,res)=>{
+const signIn = async(req,res)=>{
     const {username,password} = req.body
+    // const hashPassword = await bcrypt.hash(password,10)
     console.log(username,password)
     const auth = await Auth.create({
-        username:username,
-        password:password
+        username,
+        password
     })
-    await auth.save()
+   
     res.send('signed in sucessfully')
 }
-const LogIn = async(req,res)=>{
+const logIn = async(req,res)=>{
    try{
     const {username,password} = req.params
-    const user = await Auth.findOne({username:username})
+    const user = await Auth.findOne({username})
     if(!user){
         throw new Error('Username is invalid')
     }
-    const check = await bcrypt.compare(password,user.password)
-    if(check){
+    // const pass = await bcrypt.hash(password,10)
+    // const match = pass === user.password;
+    // console.log(pass,user.password)
+    const match = bcrypt.compareSync(password, user.password);
+    if(match){
         res.redirect('/api/user/')
     }else{
         throw new Error('Incorrect Credentials')
@@ -30,5 +34,5 @@ const LogIn = async(req,res)=>{
    }
 }
 module.exports={
-    SignIn,LogIn
+    signIn,logIn
 }
