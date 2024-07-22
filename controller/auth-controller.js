@@ -3,25 +3,31 @@ const bcrypt = require('bcrypt')
 
 const SignIn = async(req,res)=>{
     const {username,password} = req.body
-    const hashedPassword = await bcrypt.hash(password,8)
     console.log(username,password)
     const auth = await Auth.create({
         username:username,
-        password:hashedPassword
+        password:password
     })
     await auth.save()
     res.send('signed in sucessfully')
 }
 const LogIn = async(req,res)=>{
+   try{
     const {username,password} = req.params
     const user = await Auth.findOne({username:username})
-    console.log(user)
+    if(!user){
+        throw new Error('Username is invalid')
+    }
     const check = await bcrypt.compare(password,user.password)
     if(check){
         res.redirect('/api/user/')
     }else{
-        res.send('Incorrect credentials')
+        throw new Error('Incorrect Credentials')
     }
+   }catch(err){
+    console.log(err)
+    res.status(401).send(err.message)
+   }
 }
 module.exports={
     SignIn,LogIn
