@@ -2,6 +2,7 @@ const mongodb = require("mongodb");
 const mongoose = require("mongoose");
 const { user } = require("./models/schema");
 const {router} = require('./routes/user')
+const {auth} = require('./routes/auth')
 const express = require("express");
 const connection = require('./connection')
 const {logReqRes}  =  require('./middlewears/app')
@@ -22,6 +23,8 @@ connection.connectMongoDb(connectionUrl)
 
 //Routes
 app.use('/api/user', router)
+app.use('/auth/user',auth)
+
 
 // * listening our application on port 8000
 app.listen(8000, () => console.log("Listening on port 8000"));

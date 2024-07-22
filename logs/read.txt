@@ -2,3 +2,41 @@
 1720591660323:POST: /api/user
 
 1720591664378:GET: /api/user
+
+1721627232383:GET: /
+
+1721627313008:GET: /auth/user/signin
+
+1721627339512:GET: /auth/user/signin
+
+1721627390337:GET: /api/user/
+
+1721627476372:GET: /auth/user/signin
+
+1721627484141:POST: /auth/user/signin
+
+1721627614114:POST: /auth/user/signin
+
+1721627691473:POST: /auth/user/signin
+
+1721627771842:GET: /auth/user/login/dksjkdj/123
+
+1721627787586:GET: /auth/user/login/dksjkdj/123
+
+1721627918624:GET: /auth/user/login/dksjkdj/123
+
+1721627953865:GET: /auth/user/login/siddh/123456
+
+1721627953870:GET: /api/user/
+
+1721628067404:GET: /api/user/
+
+1721628118714:DELETE: /api/user/
+
+1721628175969:POST: /api/user/
+
+1721628417461:POST: /api/user/
+
+1721628505589:POST: /api/user/
+
+1721628514266:GET: /api/user/
