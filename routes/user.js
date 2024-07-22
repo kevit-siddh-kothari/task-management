@@ -1,5 +1,5 @@
-const express = require('express')
-const object = require('../controller/user')
+const express = require('express');
+const object = require('../controller/user');
 
 //we can make just routes routes
 const router = express.Router();    
@@ -16,7 +16,7 @@ router.post("/", object.handlePostUsers);
   router.delete("/:na", object.handleDeleteAllUsers);
   
   // * Patch Request
-  router.patch('/:na', object.handlePatchUser)
+  router.patch('/:na', object.handlePatchUser);
   
 module.exports = {
     router

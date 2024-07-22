@@ -1,4 +1,4 @@
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
 
 //schema defined
 const userSchema = new mongoose.Schema({
@@ -17,11 +17,11 @@ const userSchema = new mongoose.Schema({
     jobTitle: {
         type: String,
     },
-},{timestamps:true})
+},{timestamps:true});
 
 //creating a model
-const user = mongoose.model('user',userSchema)
+const user = mongoose.model('user', userSchema);
 
-module.exports ={
+module.exports = { 
     user
 }

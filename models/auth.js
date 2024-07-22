@@ -15,18 +15,19 @@ const userSchema = new mongoose.Schema({
             type:String
         }
     }]
-},{timestamps:true})
+},{timestamps:true});
 
 
 userSchema.pre('save', function(next){
     const user = this;
-    user.password =  bcrypt.hashSync(user.password, 10);
-    console.log('hello');
-    next()
+    if(user.isModified('password')){
+        user.password =  bcrypt.hashSync(user.password , 10);
+    }
+    next();
 })
 
 //creating a model
-const Auth = mongoose.model('authentications',userSchema);
+const Auth = mongoose.model('authentications', userSchema);
 
 
 
