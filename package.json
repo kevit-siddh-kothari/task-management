@@ -18,7 +18,9 @@
   },
   "homepage": "https://github.com/kevit-siddh-kothari/task-management#readme",
   "dependencies": {
+    "bcrypt": "^5.1.1",
     "express": "^4.19.2",
+    "js": "^0.1.0",
     "mongodb": "^6.8.0",
     "mongoose": "^8.4.4",
     "nodemon": "^3.1.4"

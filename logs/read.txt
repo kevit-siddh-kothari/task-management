@@ -40,3 +40,23 @@
 1721628505589:POST: /api/user/
 
 1721628514266:GET: /api/user/
+
+1721629484872:POST: /auth/user/signin
+
+1721629548122:POST: /auth/user/signin
+
+1721630106234:GET: /auth/user/login/
+
+1721630125943:GET: /auth/user/login/username=siddharth/password=siddh@127890
+
+1721630143223:GET: /auth/user/login/username=siddharth/password=siddh@127890
+
+1721630240310:GET: /auth/user/login/username=siddharth/password=siddh@127890
+
+1721630264107:GET: /auth/user/login/username=siddharth/password=siddh@127890
+
+1721630318592:GET: /auth/user/login/siddharth/siddh@127890
+
+1721630414079:GET: /auth/user/login/siddharth/sid@128904
+
+1721630414105:GET: /api/user/
