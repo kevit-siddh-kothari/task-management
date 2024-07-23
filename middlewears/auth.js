@@ -3,6 +3,7 @@ const {Auth} = require('../models/auth');
 
 const authentication = async(req,res,next) =>{
     try{
+        console.log(req.path);
         const token = req.header('Authorization').replace('Bearer','').trim();
         // console.log(token)
         const decoded = jwt.verify(token, 'thisismytoken');
@@ -20,4 +21,4 @@ const authentication = async(req,res,next) =>{
 }
 module.exports={
     authentication
-};
+}; 

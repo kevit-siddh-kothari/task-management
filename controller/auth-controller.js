@@ -36,17 +36,26 @@ const logIn = async(req,res)=>{
 
 const logOut = async(req,res,next)=>{
     try{
-        console.log(req.user)
         req.user.tokens = req.user.tokens.filter((token)=>{
             return token.token !== req.token 
         })
         await req.user.save()
-        res.send()
+        res.send('Loged Out sucessfully')
     }catch(err){
         res.status(500).send()
     }
 };
 
+const logOutAll = async(req,res,next)=>{
+    try{
+        req.user.tokens = [];
+        await req.user.save()
+        res.send('Logged out from all accounts sucessfully')
+    }catch(err){
+        res.status(500).send()
+    }
+}
+
 module.exports={
-    signIn,logIn,logOut
+    signIn,logIn,logOut,logOutAll
 }
