@@ -1,11 +1,12 @@
 const {Auth} = require('../models/auth');
 const bcrypt = require('bcryptjs');
-const jwt = require('../services/jwt-token')
+const jwt = require('../services/jwt-token');
 
 const signIn = async(req,res)=>{
     const {username,password} = req.body;
     // const hashPassword = await bcrypt.hash(password,10)
     console.log(username,password);
+    
     const auth = new Auth({
         username,
         password
@@ -31,7 +32,21 @@ const logIn = async(req,res)=>{
     console.log(err);
     res.status(401).send(err.message);
    }
-}
+};
+
+const logOut = async(req,res,next)=>{
+    try{
+        console.log(req.user)
+        req.user.tokens = req.user.tokens.filter((token)=>{
+            return token.token !== req.token 
+        })
+        await req.user.save()
+        res.send()
+    }catch(err){
+        res.status(500).send()
+    }
+};
+
 module.exports={
-    signIn,logIn
+    signIn,logIn,logOut
 }
