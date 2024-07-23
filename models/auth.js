@@ -24,8 +24,14 @@ userSchema.pre('save', function(next){
         user.password =  bcrypt.hashSync(user.password , 10);
     }
     next();
-})
-
+});
+userSchema.methods.getPublicProfile = function () {
+    const user = this;
+    const userObject = JSON.parse(JSON.stringify(user));
+    delete userObject.password;
+    delete userObject.tokens;
+    return userObject;
+};
 //creating a model
 const Auth = mongoose.model('authentications', userSchema);
 

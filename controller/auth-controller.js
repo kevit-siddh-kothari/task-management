@@ -24,7 +24,7 @@ const logIn = async(req,res)=>{
     const match = bcrypt.compareSync(password, user.password);
     if(match){
         const token = await jwt.generateToken(user);
-        res.send({user,token});
+        res.send({user:user.getPublicProfile(),token});
     }else{
         throw new Error('Incorrect Credentials');
     }
