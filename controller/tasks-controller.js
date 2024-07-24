@@ -2,7 +2,7 @@ const { Task } = require("../models/task");
 
 const getTasksByUserId = async (req, res) => {
   const id = req.user._id;
-  const tasks = await Task.find({ userId: id });
+  const tasks = await Task.find({ userId: id }).populate('userId');
   return res.status(200).json(tasks);
 };
 
@@ -13,7 +13,7 @@ const getTaskById = async (req, res) => {
     if (!task) throw new Error(`No task found with ${id} id!`);
     return res.status(200).json(task);
   } catch (err) {
-    console.log(err.message)
+    console.log(err.message);
   }
 };
 
