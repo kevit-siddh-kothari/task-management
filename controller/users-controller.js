@@ -1,23 +1,27 @@
-const {Auth} = require('../models/auth');
+const {User} = require('../models/user');
 const bcrypt = require('bcryptjs');
 const jwt = require('../services/jwt-token');
 
 const signIn = async(req,res)=>{
-    const {username,password} = req.body;
+    const {username,password,firstName,lastName,email} = req.body;
     // const hashPassword = await bcrypt.hash(password,10)
     console.log(username,password);
     
-    const auth = new Auth({
+    const user = new User({
         username,
-        password
+        password,
+        firstName,
+        lastName,
+        email
     })
-   await auth.save();
-    res.send('signed in sucessfully');
+   await user.save();
+    res.send('signed up sucessfully');
 }
+
 const logIn = async(req,res)=>{
    try{
-    const {username,password} = req.params;
-    const user = await Auth.findOne({username});
+    const {username,password} = req.body;
+    const user = await User.findOne({username});
     if(!user){
         throw new Error('Username is invalid');
     }
@@ -37,25 +41,25 @@ const logIn = async(req,res)=>{
 const logOut = async(req,res,next)=>{
     try{
         req.user.tokens = req.user.tokens.filter((token)=>{
-            return token.token !== req.token 
+            return token.token !== req.token ;
         })
-        await req.user.save()
-        res.send('Loged Out sucessfully')
+        await req.user.save();
+        res.send('Loged Out sucessfully');
     }catch(err){
-        res.status(500).send()
+        res.status(500).send();
     }
 };
 
-const logOutAll = async(req,res,next)=>{
+const logOutFromAllDevices = async(req,res,next)=>{
     try{
         req.user.tokens = [];
-        await req.user.save()
-        res.send('Logged out from all accounts sucessfully')
+        await req.user.save();
+        res.send('Logged out from all accounts sucessfully');
     }catch(err){
-        res.status(500).send()
+        res.status(500).send();
     }
 }
 
 module.exports={
-    signIn,logIn,logOut,logOutAll
-}
+    signIn,logIn,logOut,logOutFromAllDevices
+};

@@ -1,12 +1,10 @@
-const mongodb = require("mongodb");
-const mongoose = require("mongoose");
-const { user } = require("./models/schema");
-const {router} = require('./routes/user');
-const {auth} = require('./routes/auth');
+const { taskRouters } = require("./routes/tasks");
+const {  userRouters } = require("./routes/users");
 const express = require("express");
-const connection = require('./connection');
-const {logReqRes}  =  require('./middlewears/app');
-const {authentication} = require('./middlewears/auth')
+const connection = require("./connection");
+const { logReqRes } = require("./middlewears/logs");
+const { authentication } = require("./middlewears/auth");
+
 //getting functionalities of express in app
 const app = express();
 
@@ -18,20 +16,17 @@ const app = express();
 
 //middlewear - handling req.body
 app.use(express.urlencoded({ extended: false }));
-app.use(logReqRes('read.txt'));
+app.use(logReqRes("read.txt"));
 
-
-//information nedded for connection to our Mongodb database
+//information nedded for connection to our Mongodb database (   ATLAS - Cloud Database)
 const connectionUrl = "mongodb+srv://siddhkothari:DkTVtEAZdH1mb3ng@cluster0.u4umjsm.mongodb.net/Task-App";
 
 //connecting to mongodb
-//mongoose.connect returns a promise
 connection.connectMongoDb(connectionUrl);
 
 //Routes
-app.use('/api/user',authentication, router);
-app.use('/auth/user',auth);
-
+app.use("/api/task", authentication, taskRouters);
+app.use("/auth/user",  userRouters);
 
 // * listening our application on port 8000
 app.listen(8000, () => console.log("Listening on port 8000"));

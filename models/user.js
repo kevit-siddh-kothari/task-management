@@ -3,12 +3,27 @@ const bcrypt = require('bcryptjs');
 
 //schema defined
 const userSchema = new mongoose.Schema({
+    firstName:{
+        type:String,
+        required: true
+    },
+    lastName:{
+        type:String,
+        required:true
+    },
     username: {
         type: String,
-        required: true
+        required: true,
+        unique:true
     },
     password: {
         type: String,
+        required:true,
+    },
+    email: {
+        type: String,
+        required:true,
+        unique:true
     },
     tokens: [{
         token:{
@@ -33,10 +48,10 @@ userSchema.methods.getPublicProfile = function () {
     return userObject;
 };
 //creating a model
-const Auth = mongoose.model('authentications', userSchema);
+const User = mongoose.model('user', userSchema);
 
 
 
 module.exports ={
-    Auth
+    User
 }

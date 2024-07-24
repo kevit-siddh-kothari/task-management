@@ -1,536 +1,114 @@
 
-1720591660323:POST: /api/user
+1721798274461:POST: /auth/user/signup
 
-1720591664378:GET: /api/user
+1721798329448:POST: /auth/user/login
 
-1721627232383:GET: /
+1721798362449:POST: /api/task/
 
-1721627313008:GET: /auth/user/signin
+1721798433140:POST: /api/task/
 
-1721627339512:GET: /auth/user/signin
+1721798515363:POST: /api/task/
 
-1721627390337:GET: /api/user/
+1721798537080:POST: /api/task/
 
-1721627476372:GET: /auth/user/signin
+1721798564231:POST: /api/task/
 
-1721627484141:POST: /auth/user/signin
+1721798581081:POST: /api/task/
 
-1721627614114:POST: /auth/user/signin
+1721798603718:GET: /api/task/
 
-1721627691473:POST: /auth/user/signin
+1721798614259:POST: /auth/user/logout
 
-1721627771842:GET: /auth/user/login/dksjkdj/123
+1721798621468:GET: /api/task/
 
-1721627787586:GET: /auth/user/login/dksjkdj/123
+1721798647520:POST: /auth/user/signup
 
-1721627918624:GET: /auth/user/login/dksjkdj/123
+1721798658884:POST: /auth/user/login
 
-1721627953865:GET: /auth/user/login/siddh/123456
+1721798665953:GET: /api/task/
 
-1721627953870:GET: /api/user/
+1721798672744:GET: /api/task/
 
-1721628067404:GET: /api/user/
+1721798734879:POST: /auth/user/logout
 
-1721628118714:DELETE: /api/user/
+1721798744277:POST: /auth/user/signup
 
-1721628175969:POST: /api/user/
+1721798750257:POST: /auth/user/login
 
-1721628417461:POST: /api/user/
+1721798762839:POST: /auth/user/login
 
-1721628505589:POST: /api/user/
+1721798777639:POST: /auth/user/login
 
-1721628514266:GET: /api/user/
+1721798784019:GET: /api/task/
 
-1721629484872:POST: /auth/user/signin
+1721798807153:POST: /api/task/
 
-1721629548122:POST: /auth/user/signin
+1721798809934:GET: /api/task/
 
-1721630106234:GET: /auth/user/login/
+1721798815676:POST: /auth/user/logout
 
-1721630125943:GET: /auth/user/login/username=siddharth/password=siddh@127890
+1721798827107:POST: /auth/user/login
 
-1721630143223:GET: /auth/user/login/username=siddharth/password=siddh@127890
+1721798847647:POST: /auth/user/login
 
-1721630240310:GET: /auth/user/login/username=siddharth/password=siddh@127890
+1721798853411:GET: /api/task/
 
-1721630264107:GET: /auth/user/login/username=siddharth/password=siddh@127890
+1721798879190:GET: /api/task/66a08f89f5f073c0dc1d7635
 
-1721630318592:GET: /auth/user/login/siddharth/siddh@127890
+1721798907026:PATCH: /api/task/66a08f89f5f073c0dc1d7635
 
-1721630414079:GET: /auth/user/login/siddharth/sid@128904
+1721798928221:PATCH: /api/task/66a08f89f5f073c0dc1d7635
 
-1721630414105:GET: /api/user/
+1721798949812:PATCH: /api/task/66a08fb5f5f073c0dc1d763d
 
-1721631443672:POST: /auth/user/signin
+1721799047667:PATCH: /api/task/66a08fb5f5f073c0dc1d763d
 
-1721631669123:POST: /auth/user/signin
+1721799057065:GET: /api/task/
 
-1721631710257:POST: /auth/user/signin
+1721799085252:DELETE: /api/task/66a08fb5f5f073c0dc1d763d
 
-1721631771107:POST: /auth/user/signin
+1721799090219:GET: /api/task/
 
-1721631864477:POST: /api/user/
+1721799096365:DELETE: /api/task
 
-1721631872380:GET: /api/user/
+1721799149501:DELETE: /api/task
 
-1721632345072:POST: /auth/user/signin
+1721799226470:DELETE: /api/task
 
-1721632366872:GET: /auth/user/login/siddharth/sid@128904
+1721799293160:DELETE: /api/task
 
-1721632366889:GET: /api/user/
+1721799299149:GET: /api/task/
 
-1721632373612:GET: /auth/user/login/siddharth/sid@12df
+1721799360714:POST: /auth/user/login
 
-1721632380821:GET: /auth/user/login/siddharth/sid@128904
+1721799369100:GET: /api/task/
 
-1721632380843:GET: /api/user/
+1721799715709:POST: /auth/user/signup
 
-1721632530982:GET: /auth/user/login/sidth/sid@128904
+1721799768467:POST: /auth/user/signup
 
-1721632724046:GET: /auth/user/login/sidth/sid@128904
+1721800148898:POST: /auth/user/signup
 
-1721632774112:GET: /auth/user/login/sidth/sid@128904
+1721800156063:POST: /auth/user/login
 
-1721632823085:GET: /auth/user/login/sidth/sid@128904
+1721800167963:POST: /api/task/
 
-1721632846477:GET: /auth/user/login/sidth/sid@128904
+1721800178003:POST: /api/task/
 
-1721632862482:GET: /auth/user/login/siddharth/sid@128904
+1721800190087:POST: /api/task/
 
-1721632862502:GET: /api/user/
+1721800194188:GET: /api/task/
 
-1721632869557:GET: /auth/user/login/siddharth/sid@128sd
+1721800209929:GET: /api/task/66a095f2ee9945510de6332b
 
-1721633382078:PATCH: /api/user/siddh
+1721800226331:PATCH: /api/task/66a095f2ee9945510de6332b
 
-1721633405640:GET: /api/user/
+1721800230774:GET: /api/task/
 
-1721633510185:PATCH: /api/user/siddh
+1721800241505:DELETE: /api/task/66a095f2ee9945510de6332b
 
-1721633514560:GET: /api/user/
+1721800245275:GET: /api/task/
 
-1721633561553:PATCH: /api/user/si
+1721800250474:DELETE: /api/task
 
-1721633573108:PATCH: /api/user/si
-
-1721639226460:GET: /auth/user/login/siddharth/sid@128sd
-
-1721639254978:GET: /auth/user/login/siddharth121133/sid@12890452145
-
-1721639277372:GET: /auth/user/login/siddh/123456
-
-1721639338513:GET: /auth/user/login/siddharth121133/sid@12890452145
-
-1721639360935:POST: /auth/user/signin
-
-1721639389843:GET: /auth/user/login/sid11/kothari
-
-1721639417436:GET: /auth/user/login/sid11/kothari
-
-1721639484429:GET: /auth/user/login/sid11/kothari
-
-1721639656155:GET: /auth/user/login/sid11/kothari
-
-1721639674899:GET: /auth/user/login/sid11/kothari
-
-1721639730699:POST: /auth/user/signin
-
-1721639747759:GET: /auth/user/login/sid111/12
-
-1721639773516:GET: /auth/user/login/sid111/12
-
-1721639797830:GET: /auth/user/login/siddh/123456
-
-1721639926976:POST: /auth/user/signin
-
-1721639973826:GET: /auth/user/login/mayank/mayank@123
-
-1721640003123:GET: /auth/user/login/mayank/mayank@123
-
-1721640277963:POST: /auth/user/signin
-
-1721640294963:GET: /auth/user/login/mayank11/mayank@1234
-
-1721640327857:GET: /auth/user/login/mayank11/mayank@1234
-
-1721640362164:GET: /auth/user/login/mayank11/mayank@1234
-
-1721640370189:GET: /auth/user/login/mayank11/mayank@1234
-
-1721640415945:GET: /auth/user/login/mk11/mayank@1234
-
-1721640426505:GET: /auth/user/login/mayank11/mayank
-
-1721640535735:GET: /auth/user/login/mayank11/mayank
-
-1721640541801:GET: /auth/user/login/mayank11/mayank@1234
-
-1721640607379:GET: /auth/user/login/mayank11/mayank@1234
-
-1721640636796:GET: /auth/user/login/mayank11/mayank@1234
-
-1721640651171:GET: /auth/user/login/mayank11/mayank@1234
-
-1721640720617:POST: /auth/user/signin
-
-1721640763450:GET: /auth/user/login/siddh678/siddh@1234
-
-1721640784260:GET: /auth/user/login/siddh678/siddh@1234
-
-1721640997781:GET: /auth/user/login/siddh678/siddh@1234
-
-1721641003738:GET: /auth/user/login/siddh678/siddh@1234
-
-1721641031203:GET: /auth/user/login/siddh678/siddh@1234
-
-1721641206670:GET: /auth/user/login/siddh678/siddh@1234
-
-1721641533110:GET: /auth/user/login/siddh678/siddh@1234
-
-1721641727391:POST: /auth/user/signin
-
-1721641749291:GET: /auth/user/login/siddh67/siddh@12345
-
-1721641928578:POST: /auth/user/signin
-
-1721641956546:GET: /auth/user/login/siddh67/siddh@12345
-
-1721642292010:GET: /auth/user/login/siddh67/siddh@12345
-
-1721642331677:GET: /auth/user/login/siddh67/siddh@12345
-
-1721642528667:GET: /auth/user/login/siddh67/siddh@12345
-
-1721642862025:GET: /auth/user/login/siddh67/siddh@12345
-
-1721642976080:POST: /auth/user/signin
-
-1721642983470:GET: /auth/user/login/siddh67/siddh@12345
-
-1721643107147:POST: /auth/user/signin
-
-1721643130924:POST: /auth/user/signin
-
-1721643148786:GET: /auth/user/login/siddh67/siddh@12345
-
-1721643148857:GET: /api/user/
-
-1721643315626:POST: /auth/user/signin
-
-1721643326621:GET: /auth/user/login/siddh67/siddh@12345
-
-1721643326697:GET: /api/user/
-
-1721643635831:POST: /auth/user/signin
-
-1721643646188:GET: /auth/user/login/siddh678/siddh@123456
-
-1721643674677:GET: /auth/user/login/siddh678/siddh@123456
-
-1721643674747:GET: /api/user/
-
-1721643862941:POST: /auth/user/signin
-
-1721643876998:GET: /auth/user/login/siddh6789/siddh@1234567
-
-1721643877076:GET: /api/user/
-
-1721645014382:GET: /auth/user/login/siddh6789/siddh@1234567
-
-1721645097270:GET: /auth/user/login/siddh6789/siddh@1234567
-
-1721645136417:GET: /auth/user/login/siddh6789/siddh@1234567
-
-1721645295260:GET: /auth/user/login/siddh6789/siddh@1234567
-
-1721645307337:GET: /auth/user/login/siddh6789/siddh@1234567
-
-1721645355500:POST: /auth/user/signin
-
-1721645368789:GET: /auth/user/login/siddh61/siddh@12345679
-
-1721645825274:GET: /auth/user/login/siddh61/siddh@12345679
-
-1721645848351:POST: /auth/user/signin
-
-1721645871737:GET: /auth/user/login/siddh59/siddh@123456791
-
-1721646018340:GET: /auth/user/login/siddh59/siddh@123456791
-
-1721646268225:POST: /auth/user/signin
-
-1721646273488:GET: /auth/user/login/siddh59/siddh@123456791
-
-1721646288721:POST: /auth/user/signin
-
-1721646296772:GET: /auth/user/login/siddh591/siddh@1234567911
-
-1721646324981:GET: /auth/user/login/siddh591/siddh@1234567911
-
-1721646330794:GET: /auth/user/login/siddh591/siddh@1234567911
-
-1721646451450:GET: /auth/user/login/siddh591/siddh@1234567911
-
-1721646466255:GET: /auth/user/login/siddh591/siddh@1234567911
-
-1721648067120:GET: /api/user/
-
-1721648155969:GET: /auth/user/login/siddh591/siddh@1234567911
-
-1721652793691:POST: /api/user/
-
-1721709230972:GET: /api/user/
-
-1721709398992:GET: /auth/user/login/
-
-1721709456598:POST: /auth/user/signin
-
-1721709481244:GET: /auth/user/login/Siddh/sid123
-
-1721709494372:GET: /auth/user/login/Siddh/sid1234
-
-1721709793473:GET: /api/user/
-
-1721710219896:GET: /api/user/
-
-1721710269165:GET: /auth/user/login/Siddh/sid1234
-
-1721710298342:GET: /api/user/
-
-1721710369852:GET: /api/user/
-
-1721710381809:GET: /api/user/
-
-1721710396499:GET: /api/user/
-
-1721710573008:GET: /api/user/
-
-1721710574352:GET: /api/user/
-
-1721710593726:GET: /api/user/
-
-1721710613963:GET: /api/user/
-
-1721710646953:GET: /api/user/
-
-1721710783981:GET: /api/user/
-
-1721711127766:GET: /api/user/
-
-1721711139251:GET: /api/user/
-
-1721711171000:GET: /api/user/
-
-1721711192014:GET: /api/user/
-
-1721711229520:GET: /api/user/
-
-1721711278146:GET: /api/user/
-
-1721711302585:GET: /api/user/
-
-1721711312506:GET: /api/user/
-
-1721711316886:GET: /api/user/
-
-1721711326600:DELETE: /api/user/
-
-1721711532308:GET: /api/user/
-
-1721711765964:PATCH: /api/user/
-
-1721711770489:DELETE: /api/user/
-
-1721712220033:GET: /api/user/
-
-1721712259828:POST: /api/user/
-
-1721712270561:PATCH: /api/user/
-
-1721712282230:DELETE: /api/user/
-
-1721712294492:GET: /api/user/
-
-1721712367680:GET: /auth/user/login/Siddh/sid1234
-
-1721712409935:GET: /api/user/
-
-1721712412925:GET: /api/user/
-
-1721712578087:GET: /api/user/
-
-1721712623049:GET: /api/user/
-
-1721712713836:GET: /api/user/
-
-1721712762410:GET: /api/user/
-
-1721712776999:GET: /api/user/
-
-1721712815430:GET: /api/user/
-
-1721712843883:GET: /api/user/
-
-1721712849640:GET: /api/user/
-
-1721712931665:GET: /api/user/
-
-1721712932746:GET: /api/user/
-
-1721712969415:GET: /api/user/
-
-1721713013462:GET: /api/user/
-
-1721713020453:GET: /api/user/
-
-1721713079768:GET: /api/user/
-
-1721713101972:GET: /api/user/
-
-1721713211336:POST: /api/user/
-
-1721713217343:GET: /api/user/
-
-1721713734974:GET: /auth/user/login/Siddh/sid1234
-
-1721713744978:GET: /api/user/
-
-1721713801472:POST: /api/user/
-
-1721713805412:GET: /api/user/
-
-1721714756694:GET: /api/user/
-
-1721714767925:POST: /auth/user/logout
-
-1721714847452:GET: /api/user/
-
-1721714896234:POST: /auth/user/logout
-
-1721714920787:POST: /auth/user/logout
-
-1721714975187:POST: /auth/user/logout
-
-1721715007417:POST: /auth/user/logout
-
-1721715026452:GET: /api/user/
-
-1721715030521:POST: /auth/user/logout
-
-1721715075169:POST: /auth/user/logout
-
-1721715137555:POST: /auth/user/logout
-
-1721715221086:POST: /auth/user/logout
-
-1721715234778:GET: /api/user/
-
-1721715247896:DELETE: /api/user/
-
-1721715250899:POST: /api/user/
-
-1721715894144:POST: /auth/user/logout
-
-1721715908892:GET: /auth/user/login/Siddh/sid1234
-
-1721715912680:GET: /api/user/
-
-1721715916508:POST: /auth/user/logout
-
-1721715920312:GET: /api/user/
-
-1721716266661:POST: /auth/user/logout
-
-1721716273706:GET: /auth/user/login/Siddh/sid1234
-
-1721716291137:GET: /api/user/
-
-1721716295918:POST: /auth/user/logout
-
-1721716298922:GET: /api/user/
-
-1721716650878:GET: /auth/user/login/Siddh/sid1234
-
-1721716657268:POST: /api/user/
-
-1721716700195:GET: /api/user/
-
-1721716770893:POST: /auth/user/logout
-
-1721717217719:GET: /auth/user/login/Siddh/sid1234
-
-1721717224012:POST: /auth/user/logoutall
-
-1721717273025:POST: /auth/user/logoutall
-
-1721717301125:POST: /auth/user/logoutall
-
-1721717319119:GET: /auth/user/login/Siddh/sid1234
-
-1721717324440:POST: /auth/user/logout
-
-1721717328968:GET: /auth/user/login/Siddh/sid1234
-
-1721717332224:GET: /auth/user/login/Siddh/sid1234
-
-1721717333005:GET: /auth/user/login/Siddh/sid1234
-
-1721717338511:POST: /auth/user/logoutall
-
-1721717346356:GET: /auth/user/login/Siddh/sid1234
-
-1721717351865:GET: /api/user/
-
-1721717356833:POST: /auth/user/logoutall
-
-1721717360852:GET: /api/user/
-
-1721717423693:GET: /auth/user/login/Siddh/sid1234
-
-1721717429099:POST: /auth/user/logout
-
-1721717432312:POST: /auth/user/logoutall
-
-1721717436483:GET: /auth/user/login/Siddh/sid1234
-
-1721717437179:GET: /auth/user/login/Siddh/sid1234
-
-1721717437865:GET: /auth/user/login/Siddh/sid1234
-
-1721717438569:GET: /auth/user/login/Siddh/sid1234
-
-1721717442449:POST: /auth/user/logout
-
-1721717447462:GET: /auth/user/login/Siddh/sid1234
-
-1721717451998:POST: /auth/user/logoutall
-
-1721717456213:GET: /auth/user/login/Siddh/sid1234
-
-1721717461577:GET: /api/user/
-
-1721718338540:GET: /auth/user/login/Siddh/sid1234
-
-1721718372814:GET: /auth/user/login/Siddh/sid1234
-
-1721718538073:GET: /auth/user/login/Siddh/sid1234
-
-1721718567957:GET: /auth/user/login/Siddh/sid1234
-
-1721718647750:GET: /auth/user/login/Siddh/sid1234
-
-1721718661296:GET: /auth/user/login/Siddh/sid1234
-
-1721718730226:GET: /auth/user/login/Siddh/sid1234
-
-1721718816355:GET: /auth/user/login/Siddh/sid1234
-
-1721719083597:GET: /auth/user/login/Siddh/sid1234
-
-1721719167143:GET: /auth/user/login/Siddh/sid1234
-
-1721719182723:POST: /auth/user/logoutall
-
-1721719186657:GET: /auth/user/login/Siddh/sid1234
-
-1721719280763:GET: /api/user/
+1721800264702:POST: /auth/user/logout
