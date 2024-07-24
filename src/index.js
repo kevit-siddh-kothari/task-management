@@ -1,3 +1,4 @@
+require('dotenv').config();
 const { taskRouters } = require("./routes/tasks");
 const {  userRouters } = require("./routes/users");
 const express = require("express");
@@ -7,6 +8,8 @@ const { authentication } = require("./middlewears/auth");
 
 //getting functionalities of express in app
 const app = express();
+
+const port = process.env.PORT;
 
 //middlewear - handling req.body
 app.use(express.urlencoded({ extended: false }));
@@ -23,4 +26,4 @@ app.use("/api/task", authentication, taskRouters);
 app.use("/auth/user",  userRouters);
 
 // * listening our application on port 8000
-app.listen(8000, () => console.log("Listening on port 8000"));
+app.listen(port, () => console.log(`Listening on port ${port}`));
