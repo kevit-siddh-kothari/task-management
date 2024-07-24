@@ -22,4 +22,4 @@ const Task = mongoose.model('task', userSchema);
 
 module.exports = { 
     Task
-}
+};

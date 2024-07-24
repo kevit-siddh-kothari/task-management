@@ -8,10 +8,10 @@ function logReqRes(filename) {
       (err, data) => {
         next();
       }
-    ) 
+    )
   };
 }
 
 module.exports = {
     logReqRes
-}
+};

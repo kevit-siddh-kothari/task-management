@@ -9,4 +9,4 @@ async function connectMongoDb(connectionUrl) {
 
 module.exports={
     connectMongoDb
-}
+};

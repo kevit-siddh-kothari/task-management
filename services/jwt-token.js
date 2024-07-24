@@ -10,4 +10,4 @@ const generateToken = async function(user){
 
 module.exports={
     generateToken
-}
+};
