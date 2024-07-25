@@ -12,6 +12,7 @@ const app = express();
 const port = process.env.PORT;
 
 //middlewear - handling req.body
+app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(logReqRes("read.txt"));
 
