@@ -6,18 +6,18 @@ const { Task } = require("../models/task");
 const getTasksByUserId = async (req, res) => {
   const { completed, limit, skip, sort } = req.query;
   const obj = {};
-  if(sort){
+  if (sort) {
     const value = sort.split(':');
-    obj[value[0]] = Number(value[1]); 
+    obj[value[0]] = Number(value[1]);
   }
   if (completed || limit || skip || sort) {
     if (completed) {
-      const task = await Task.find({ userId: req.user._id, completed: completed }, { _id: 0, completed: 1, task: 1,jobTitle:1 }).limit(Number(limit)).skip(Number(skip)).sort(obj).populate({
+      const task = await Task.find({ userId: req.user._id, completed: completed }, { _id: 0, completed: 1, task: 1, jobTitle: 1 }).limit(Number(limit)).skip(Number(skip)).sort(obj).populate({
         path: 'userId',
       })
       res.send(task)
     } else {
-      const task = await Task.find({ userId: req.user._id }, { _id: 0, completed: 1, task: 1, jobTitle:1 }).limit(Number(limit)).skip(Number(skip)).sort(obj).populate({
+      const task = await Task.find({ userId: req.user._id }, { _id: 0, completed: 1, task: 1, jobTitle: 1 }).limit(Number(limit)).skip(Number(skip)).sort(obj).populate({
         path: 'userId',
       })
       res.send(task);
