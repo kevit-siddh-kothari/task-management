@@ -2,20 +2,26 @@ const {User} = require('../models/user');
 const bcrypt = require('bcryptjs');
 const jwt = require('../services/jwt-token');
 
-const signIn = async(req,res)=>{
-    const {username,password,firstName,lastName,email} = req.body;
+const signUp = async(req,res)=>{
+    // const {username,password,firstName,lastName,email} = req.body;
+   try{
+    const user = new User(req.body);
     // const hashPassword = await bcrypt.hash(password,10)
-    console.log(username,password);
+    console.log(user)
     
-    const user = new User({
-        username,
-        password,
-        firstName,
-        lastName,
-        email
-    })
+    // const user = new User({
+    //     username,
+    //     password,
+    //     firstName,
+    //     lastName,
+    //     email
+    // })
    await user.save();
     res.send('signed up sucessfully');
+   }catch(err){
+    console.log(`please enter all the information required: ${err.message}`)
+    res.send(err.message)
+   }
 }
 
 const logIn = async(req,res)=>{
@@ -61,5 +67,5 @@ const logOutFromAllDevices = async(req,res,next)=>{
 }
 
 module.exports={
-    signIn,logIn,logOut,logOutFromAllDevices
+    signUp,logIn,logOut,logOutFromAllDevices
 };
