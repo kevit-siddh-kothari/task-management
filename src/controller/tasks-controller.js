@@ -4,6 +4,7 @@ const { Task } = require("../models/task");
 // * query parameters 
 // * ?limit=10&skip=0?completed=true/false
 const getTasksByUserId = async (req, res) => {
+ try{
   const { completed, limit, skip, sort } = req.query;
   const obj = {};
   if (sort) {
@@ -28,13 +29,16 @@ const getTasksByUserId = async (req, res) => {
     const tasks = await Task.find({ userId: id }, { _id: 0 }).populate('userId', 'firstName lastName -_id');
     return res.status(200).json(tasks);
   }
+ }catch(err){
+   res.send(errs.message)
+ }
 };
 
 const getTaskById = async (req, res) => {
   try {
     const { id } = req.params;
     const task = await Task.findById(id);
-    if (!task) throw new Error(`No task found with ${id} id!`);
+    if (!task) return new Error(`No task found with ${id} id!`);
     return res.status(200).json(task);
   } catch (err) {
     console.log(err.message);
