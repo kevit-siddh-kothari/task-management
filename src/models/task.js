@@ -18,6 +18,7 @@ const userSchema = new mongoose.Schema({
     }
 },{timestamps:true});
 
+
 //creating a model
 const Task = mongoose.model('task', userSchema);
 
